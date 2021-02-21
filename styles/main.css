@@ -1,0 +1,210 @@
+@font-face
+{
+	font-family: "spatalge";
+		src: url("../fichiers/Algerian_Regular.ttf");
+}
+@font-face
+{
+	font-family: "spatatitle";
+		src: url("../fichiers/ItaliaMd.ttf");
+}
+@font-face
+{
+	font-family: "spatatext";
+		src: url("../fichiers/ItalicC.ttf");
+}
+body
+{
+	margin-top: 5px;
+}
+.container
+{
+	width: 95%;
+	margin: 0px auto;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+header
+{
+	display: grid;
+	grid-template-columns: 100px auto;
+	grid-gap: 5px;
+}
+.img_mobile
+{
+	display: grid;
+	align-content: center;
+	padding: 0px 5px;
+}
+.img_title, .title h2, footer .iso, .contact img
+{
+	display: none;
+}
+.title h1
+{
+	font-family: "spatalge";
+	font-size: 20px;
+	text-align: center;
+	font-variant-caps: small-caps;
+}
+h2
+{
+	font-family: "spatatitle";
+	text-align: center;
+	text-decoration: underline;
+}
+.artall ul li
+{
+	list-style: url(../fichiers/liste.png);
+}
+footer
+{
+	text-align: center;
+	font-size: 12px;
+	background-color: #00a;
+	color: #fff;
+}
+footer ul
+{
+	list-style: none;
+	margin-left: -50px;
+}
+
+
+
+@media only screen and (min-width: 1000px)
+{
+	.img_title, .title, nav ul li, footer .iso, .info
+	{
+		display: grid;
+		align-content: center;
+		padding: 0px 5px;
+	}
+	.contact p img
+	{
+		display: inline-flex;
+		vertical-align: text-bottom;
+	}
+	.img_mobile
+	{
+		display: none;
+	}
+	.container
+	{
+		width: 1000px;
+		font-size: 15px;
+	}
+	header
+	{
+		display: grid;
+		grid-template-columns: 200px auto;
+		grid-gap: 5px;
+		box-shadow: 0px 15px 5px #aaa;
+	}
+	footer
+	{
+		display: grid;
+		grid-template-columns: 300px auto 300px;
+		box-shadow: 0px -15px 5px #aaa;
+		font-size: 12px;
+		text-align: center;
+		height: 170px;
+		background-image: url(../fichiers/fond_camion.jpg);
+		background-repeat: no-repeat;
+		color: #fff;
+	}
+	header > div
+	{
+		text-align: center;
+	}
+	.title h1
+	{
+		font-size: 40px;
+	}
+	.title h2
+	{
+		color: #00a;
+		display: block;
+	}
+	section
+	{
+		margin: 0px;
+		padding-bottom: 15px;
+	}
+	.artone h2
+	{
+		border-bottom: solid 2px #00a;
+		border-top: solid 2px #00a;
+		box-shadow: 0px 10px 5px #55f;
+		text-align: center;
+		font-size: 30px;
+	}
+	.artone p
+	{
+		padding: 0px 30px;
+		text-align: center;
+		font-weight: 900;
+	}
+	.artall h2
+	{
+		text-align: center;
+		text-decoration: underline 2px #00a;
+	}
+	.artall p
+	{
+		padding: 0px 30px;
+		font-weight: 700;
+	}
+	.artall p span
+	{
+		font-family: Arial, Helvetica, sans-serif;
+		color: #a00;
+		font-size: 15px;
+		text-decoration: underline dashed;
+		font-weight: bold;
+		font-style: oblique 40deg;
+	}
+	.artall ul
+	{
+		margin-left: 75px;
+		padding: 10px 30px;
+	}
+	.artall ul li
+	{
+		font-weight: 700;
+	}
+	.artall .list_pays
+	{
+		display: flex;
+		margin-left: 20px;
+		padding : 0px 0px;
+	}
+	.artall .list_pays li
+	{
+		padding: 0px 10px;
+		list-style: none;
+	}
+	.info span
+	{
+		font-family: "spatalge";
+		font-variant-caps: small-caps;
+		color: #000;
+		font-size: 20px;
+	}
+	.contact ul li img
+	{
+		display: flex;
+		width: 40px;
+	}
+	.contact ul
+	{
+		margin-top: 35px;
+		display: flex;
+		justify-content: center;
+		list-style: none;
+	}
+	.contact ul li:last-child
+	{
+		margin-top: 7px;
+	}
+}
